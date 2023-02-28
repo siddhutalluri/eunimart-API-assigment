@@ -9,7 +9,7 @@ class Userdata(models.Model):
     Last_Name = models.CharField(max_length=32)
     User_id = models.CharField(max_length=25, )
     Gender = models.CharField(max_length=6, choices=(("M", "Male"), ("F", "Female"), ("O", "Others")))
-    Age = models.IntegerField(max_length=3)
+    Age = models.IntegerField()
     PhoneNumber = models.CharField(max_length=10)
     Email = models.EmailField()
     Password = models.CharField(max_length=50)

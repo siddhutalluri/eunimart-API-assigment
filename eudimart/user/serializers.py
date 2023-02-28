@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Userdata,Tweet
+from .models import Userdata , Tweet
 
 
 class UserdataSerializers(serializers.HyperlinkedModelSerializer):
@@ -9,7 +9,7 @@ class UserdataSerializers(serializers.HyperlinkedModelSerializer):
 
 
 class TweetSerializer(serializers.HyperlinkedModelSerializer):
-    user_id = serializers.ReadOnlyField()
+    #user_id = serializers.ReadOnlyField()
 
     class Meta:
         model = Tweet
